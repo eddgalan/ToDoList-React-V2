@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Task from './task';
+import './todoApp.css';
 
 export default function TodoApp() {
   const [task, setTask] = useState('');
@@ -40,10 +41,10 @@ export default function TodoApp() {
   return (
     <div className="todo-container">
       <form className="todo-create-form" onSubmit={ handleSubmit }>
-        <input type="text" className="todo-input" value={ task } onChange={ handleChange } />
+        <input type="text" className="task-input" value={ task } onChange={ handleChange } placeholder="Type a task to do..."/>
         <input type="submit" className="button-create" value="Create Task" />
       </form>
-      <div className="todo-container">
+      <div className="">
         {
           tasks.map( (task) => (
             <Task key={ task.id } task={ task } onUpdate={ handleUpdate } onDelete={ handleDelete } />

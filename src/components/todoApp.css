@@ -1,0 +1,83 @@
+.todo-container {
+  background-color: #FFF;
+  width: 500px;
+  min-height: 200px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 1px solid;
+  padding: 20px 5px;
+}
+
+.todo-create-form {
+  display: flex;
+  gap: 5px;
+}
+
+.task-input {
+  flex-grow: 1;
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  border: solid 1px #999;
+  font-size: 16px;
+}
+
+.button-create {
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(26, 76, 169);
+  color: #FFF;
+  padding: 10px 20px;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.task {
+  padding: 10px;
+  background-color: #FFF;
+}
+
+.task:hover {
+  background-color: #efefef;
+}
+
+.task-title {
+  flex: 1;
+  font-size: 20px;
+}
+
+.update-form,
+.task-info {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.button {
+  border: none;
+  border-radius: 3px;
+  color: #FFF;
+  background-color: rgb(26, 76, 169);
+  padding: 10px 20px;
+}
+
+.button-delete {
+  border: none;
+  border-radius: 3px;
+  color: #FFF;
+  background-color: rgb(169, 26, 26);
+  padding: 10px 20px;
+}
+
+.button-create:hover, .button:hover, .button-delete:hover {
+  font-weight: bold;
+  color: #000;
+  opacity: 0.8;
+}

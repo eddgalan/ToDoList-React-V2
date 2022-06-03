@@ -30,10 +30,10 @@ export default function Task({ task, onUpdate, onDelete }) {
 
   function TaskElement() {
     return(
-      <div className="taskInfo">
-        { task.task }
-        <button onClick={ () => setIsEdit(true) } > Edit </button>
-        <button onClick={ () => onDelete(task.id) }> Delete </button>
+      <div className="task-info">
+        <span className="task-title"> { task.task } </span>
+        <button className="button" onClick={ () => setIsEdit(true) } > Edit </button>
+        <button className="button-delete" onClick={ () => onDelete(task.id) }> Delete </button>
       </div>
     );
   }
